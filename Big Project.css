@@ -1,31 +1,60 @@
-img{
+* {
+    margin: 0;
+   
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: .5s all;
+}
+
+a:hover , a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+input:focus , button:focus {
+    border-color: inherit;
+    outline: none;
+}
+
+img {
     max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-    
-
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-ul .li {
+ul , li {
     list-style-type: none;
-    padding: 0%;
-
+    padding: 0;
 }
 
-header{
-    padding: 0%;
+header {
+    padding: 30px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.left .menu {
+.left  .menu  {
     display: flex;
-align-items: center;
+    align-items: center;
 }
 
 .left .menu li {
-    margin-right: 20px;
+    margin-right: 50px;
     font-weight: 600;
 }
 
@@ -33,132 +62,157 @@ align-items: center;
     padding: 5px;
     position: relative;
     font-size: 18px;
-    
 }
 
-.left .menu li a::before{
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform:translateX(-50%);
-    width: 10px;
-    height: 10px;
-    border-radius: 100px;
-    background-color: black;
-    opacity: 0;
-    transition: .4s;
 
+.left .menu li a:hover {
+    color: #a30000;
 }
 
-.left .menu li a:hover{
-    color: rgb(206, 53, 53);
-}
-
-.left .menu li a:hover::before{
+.left .menu li a:hover::before {
     bottom: -5px;
     opacity: 1;
 }
 
-.logo{
+.logo {
     text-align: center;
 }
 
-.right{
+.right {
     display: flex;
     align-items: center;
 }
 
-.right form{
+.right form {
     position: relative;
     width: 250px;
     height: 45px;
     margin-right: 20px;
 }
 
-.right form input{
-   width: 90%; 
-   height: 90%;
-   border:none;
-   box-shadow: 0 0 8px rgb(231, 204, 204);
-   padding: 5px 15px;
-   border-radius: 50px;
+.right form input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 8px rgb(214, 18, 18);
+    padding: 5px 15px;
+    border-radius: 50px;
 }
 
-.right form button{
+.right form button {
     position: absolute;
-    right: 0%;
-    top: 25%;
-    width: 15%;
-    background-color: unset;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #a30000;
     border: none;
     cursor: pointer;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
 
-.right .wish-cart ul{
+.right .shopping-cart ul {
     display: flex;
     align-items: center;
-
 }
 
-.right .wish-cart ul{
+.right .shopping-cart ul li {
     margin: 0 10px;
 }
 
-.right .wish-cart ul li:last-child{
+.right .shopping-cart ul li:last-child {
     position: relative;
 }
 
-.right .wish-cart ul li:last-child span{
+.right .shopping-cart ul li:last-child span {
     position: absolute;
     top: -10px;
     right: -10px;
     display: block;
     padding: 7px 10px;
-    background-color: red;
-    color: seashell;
+    background-color: #a30000;
+    color: #fff;
     border-radius: 50px;
     font-size: 12px;
 }
 
-.banner{
-    display: flex;
-    padding: 50px 100px;
-    padding-bottom: 0;
+.btn {
+    width: 175px;
+    height: 45px;
+    background-color: #a30000;
+    color: #fff;
+    padding-top: 12px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #a30000;
+    margin-top: 20px;
 }
-h1{
-    font-size: 55px;
+.banner {
+    display: 0;
+    padding: 40px 20px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+h1 {
+    font-size: 75px;
     text-transform: uppercase;
     margin-bottom: 15px;
-    
 }
 
-h1 span{
-    color: rgb(207, 24, 24);
+h1 span {
+    color: #a30000;
 }
 
-p{
-    color: rgb(206, 33, 33);
+p {
+    color: #ccc;
     margin-bottom: 20px;
-    text-transform: capitalize;
-
 }
 
 .price {
     font-size: 35px;
-    margin-bottom: 20px;
-   
+    margin-bottom: 40px;
 }
 
-.btn{
-    width: 175px;
-    height: 45px;
-    background-color: rgb(207, 61, 61);
-    color: rgb(255, 255, 255);
-    padding-top: 12px;
-    display: block;
-    text-align: center;
-    border-radius: 10px;
+
+.btn:hover {
+    background-color: transparent;
+    color: #ff0202;
 }
+
+.banner-img {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    
+}
+
+header {
+    padding: 10px 15px;
+}
+
+.right form {
+    width: 200px;
+}
+
+.left .menu li {
+    margin-right: 10px;
+}
+
+.left .menu li a::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #a30000;
+    opacity: 0;
+    transition: .4s;
+}
+
+
