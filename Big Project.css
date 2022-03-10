@@ -28,6 +28,15 @@ input:focus , button:focus {
     border-color: inherit;
     outline: none;
 }
+body > header > div.right > div > ol{
+    padding-left: 0px;
+}
+body > header > div.right > div > ol>li{
+    display: inline;
+    margin: 5px;
+    
+}
+
 
 img {
     max-width: 100%;
@@ -214,5 +223,4 @@ header {
     opacity: 0;
     transition: .4s;
 }
-
 
