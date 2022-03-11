@@ -1,4 +1,4 @@
-body {
+body{
     
     background: #FEDBB7;
     display: -webkit-box;
@@ -27,7 +27,7 @@ body {
   }
   .card:hover > p{
       opacity:1;
-         transform: scale(1.5)
+         transform: scale(1.5);
       top:80%;
    
   }
