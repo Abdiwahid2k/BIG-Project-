@@ -1,0 +1,57 @@
+* {
+  margin: 1px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 100px;
+  background-color: rgba(112, 74, 134, 0.75);
+}
+
+.deals-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hot-deals {
+  width: 973px;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.hot-deals h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Open sans" sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.slider-two {
+  width: 200%;
+  display: flex;
+}
+.shoes-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.shoes-section img {
+  margin: 20px;
+  width: 153px;
+}
+figcaption {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+figcaption span {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
