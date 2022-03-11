@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="ShopingCart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table id="cart" class="table table-hover table-condensed">
+        <thead>
+          <tr>
+            <th style="width: 50%">Product</th>
+            <th style="width: 10%">Price</th>
+            <th style="width: 8%">Quantity</th>
+            <th style="width: 22%" class="text-center">Subtotal</th>
+            <th style="width: 10%"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-th="Product">
+              <div class="row">
+                <div class="col-sm-2 hidden-xs">
+                  <img id="productimg"
+                    src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/37b049ba-aa92-4bc1-b934-ec16a68af87b/air-vapormax-2021-fk-womens-shoes-1WB8SL.png"
+                    alt="Nike Air Vapormax 2021 FK"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="col-sm-10">
+                  <h4 class="nomargin">Nike Air Vapormax 2021 FK</h4>
+                  <p>
+                    Made from at least 40% recycled materials by weight, the
+                    Nike Air VaporMax 2021 FK is airy and easy to wear with
+                    superstretchy, recycled Flyknit fabric (plus a soft collar
+                    that sculpts your ankle).
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td data-th="Price">$162.97</td>
+            <td data-th="Quantity">
+              <input type="number" class="form-control text-center" value="1" />
+            </td>
+            <td data-th="Subtotal" class="text-center">$162.97</td>
+            <td class="actions" data-th="">
+              <button class="btn btn-info btn-sm">
+                <i class="fa fa-refresh"></i>
+              </button>
+              <button class="btn btn-danger btn-sm">
+                <i class="fa fa-trash-o"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="visible-xs">
+            <td class="text-center"><strong>Total $172.97</strong></td>
+
+            <td>
+              <a href="#" class="btn btn-warning"
+                ><i class="fa fa-angle-left"></i> Continue Shopping</a
+              >
+            </td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td class="hidden-xs text-center">
+              <strong>Total $172.97</strong>
+            </td>
+            <td>
+              <a href="#" class="btn btn-success btn-block"
+                >Checkout <i class="fa fa-angle-right"></i
+              ></a>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

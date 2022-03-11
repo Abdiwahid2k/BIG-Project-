@@ -25,7 +25,7 @@ body {
 .hot-deals h1 {
   display: flex;
   justify-content: center;
-  font-family: "Open sans" sans-serif;
+  font-family: "Open sans sans-serif";
   text-transform: uppercase;
   position: relative;
   margin-bottom: 20px;
@@ -45,13 +45,13 @@ body {
   margin: 20px;
   width: 153px;
 }
-figcaption {
+p {
   text-align: center;
   margin-top: 15px;
   font-size: 13px;
   color: rgb(0, 0, 0);
 }
-figcaption span {
+p span {
   font-size: 16px;
   color: rgb(0, 0, 0);
 }

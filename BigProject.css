@@ -159,7 +159,7 @@ header {
     margin-top: 20px;
 }
 .banner {
-    display: 0;
+    
     padding: 40px 20px;
     padding-bottom: 0;
     position: relative;
@@ -278,5 +278,13 @@ header {
     text-transform: uppercase;
   }
 
+  .shopping-cart img{
+      width: 37px;
+
+  }
+
+  .logo image{
+      width:300px ;
+  }
 
   
