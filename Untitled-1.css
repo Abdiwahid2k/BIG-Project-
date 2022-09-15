@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: -webkit-radial-gradient(
+            rgba(16, 47, 70, 0) 60%,
+            rgba(16, 47, 70, 0.258824) 100%
+        ),
+        linear-gradient(108deg, rgb(183, 28, 28) 0, rgb(26, 35, 126) 90%),
+        rgba(0, 0, 0, 0);
+    background: -moz-radial-gradient(
+            rgba(16, 47, 70, 0) 60%,
+            rgba(16, 47, 70, 0.258824) 100%
+        ),
+        linear-gradient(108deg, rgb(183, 28, 28) 0, rgb(26, 35, 126) 90%),
+        rgba(0, 0, 0, 0);
+    background: -o-radial-gradient(
+            rgba(16, 47, 70, 0) 60%,
+            rgba(16, 47, 70, 0.258824) 100%
+        ),
+        linear-gradient(108deg, rgb(183, 28, 28) 0, rgb(26, 35, 126) 90%),
+        rgba(0, 0, 0, 0);
+    background: -ms-radial-gradient(
+            rgba(16, 47, 70, 0) 60%,
+            rgba(16, 47, 70, 0.258824) 100%
+        ),
+        linear-gradient(108deg, rgb(183, 28, 28) 0, rgb(26, 35, 126) 90%),
+        rgba(0, 0, 0, 0);
+    background: radial-gradient(
+            rgba(16, 47, 70, 0) 60%,
+            rgba(16, 47, 70, 0.258824) 100%
+        ),
+        linear-gradient(108deg, rgb(183, 28, 28) 0, rgb(26, 35, 126) 90%),
+        rgba(0, 0, 0, 0);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab', GradientType=1);
+}
+
+body {
+    font-family: "Montserrat", Georgia, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB9JREFUeNpiZmBg6AZiDiBWZ4YyQMCOCcYA4kMAAQYAHyYCCUdxidgAAAAASUVORK5CYII=");
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+button {
+  padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #2194E0;
+  border: 2px solid #2194E0;
+  font-size: 24px;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+button:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+button:hover {
+  background-color: #2194E0;
+  color: #fff;
+  border-bottom: 4px solid #1977b5;
+}
+button:hover:before {
+  transform: skewX(-45deg) translateX(13.5em);
+  transition: all 0.5s ease-in-out;
+}
